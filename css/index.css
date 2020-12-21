@@ -1,0 +1,13 @@
+/* Style Guide */
+/* #757575 for icons */
+
+.body {
+  margin: 0;
+  font-family: Montserrat;
+}
+.navbar {
+  display: flex;
+}
+.logo img {
+  width: 250px;
+}
