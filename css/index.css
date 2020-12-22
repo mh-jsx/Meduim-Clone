@@ -1,13 +1,163 @@
 /* Style Guide */
 /* #757575 for icons */
 
-.body {
-  margin: 0;
-  font-family: Montserrat;
+body,
+html {
+  margin: 15px;
+  font-family: "Montserrat", sans-serif;
 }
+
+/* Navigation  */
 .navbar {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 .logo img {
-  width: 250px;
+  width: 220px;
 }
+img.search {
+  width: 18px;
+  vertical-align: middle;
+}
+img.search + input {
+  vertical-align: middle;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  font-weight: 300;
+  padding-left: 5px;
+}
+/* icons */
+.links img.nav-icons {
+  width: 20px;
+  vertical-align: middle;
+  padding-right: 20px;
+}
+.links input[type="button"] {
+  margin-right: 15px;
+  background-color: #fff;
+  padding: 9px 20px;
+  border: #757575 1px solid;
+  border-radius: 7%;
+}
+/* profile image */
+.links img.nav-profile {
+  vertical-align: middle;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+/* End Navigation */
+
+/* Post */
+
+.post-container {
+  display: flex;
+  margin-top: 30px;
+}
+
+/* featured - lg post */
+.featured .post-text-lg tr:nth-child(1) img {
+  width: 100%;
+}
+
+.featured .post-text-lg tr:nth-child(2) {
+  font-size: 12px;
+  font-weight: 600;
+  width: 100%;
+}
+.featured .post-text-lg tr:nth-child(2) td {
+  padding-top: 20px;
+}
+.featured .post-text-lg tr:nth-child(2) img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.featured .post-text-lg span {
+  color: #757575;
+}
+
+.featured .post-text-lg tr:nth-child(3) {
+  font-size: 20px;
+  font-weight: 700;
+}
+.featured .post-text-lg tr:nth-child(3) td {
+  padding-top: 20px;
+}
+.featured .post-text-lg tr:nth-child(4) {
+  font-size: 15px;
+  font-weight: 400;
+}
+.featured .post-text-lg tr:nth-child(5) {
+  font-size: 12px;
+}
+.featured .post-text-lg tr:nth-child(5) td {
+  padding-top: 20px;
+}
+.featured .post-text-lg tr:nth-child(5) a {
+  text-decoration: none;
+  color: #757575;
+}
+.featured .post-text-lg tr:nth-child(5) img {
+  vertical-align: middle;
+  width: 12px;
+}
+
+/* latest */
+.latest .table-container {
+  margin-bottom: 50px;
+}
+.latest table {
+  width: 80%;
+}
+
+.latest {
+  margin-left: 20px;
+}
+.post-top-text img {
+  width: 50px;
+}
+
+.latest .post-top-text {
+  font-size: 12px;
+  font-weight: 600;
+  vertical-align: top;
+}
+.latest .post-top-text img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.post-right-img {
+  text-align: right;
+}
+.post-right-img img {
+  width: 120px;
+  margin-left: 10px;
+}
+.latest .post-heading {
+  font-size: 18px;
+  font-weight: 700;
+  vertical-align: top;
+}
+.latest .end-post-link a {
+  text-decoration: none;
+  color: #757575;
+}
+.latest .end-post-link {
+  font-size: 12px;
+  color: #757575;
+  vertical-align: top;
+}
+.latest .end-post-link img {
+  vertical-align: middle;
+  width: 12px;
+}
+/* End Post */
