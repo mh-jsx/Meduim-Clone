@@ -1,5 +1,6 @@
 /* Style Guide */
 /* #757575 for icons */
+/* #1A8917 following text */
 
 body,
 html {
@@ -56,9 +57,20 @@ img.search + input {
 .post-container {
   display: flex;
   margin-top: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.featured {
+  width: 30%;
+}
+.latest {
+  width: 35%;
 }
 
 /* featured - lg post */
+.post-text-lg {
+  width: 100%;
+}
 .featured .post-text-lg tr:nth-child(1) img {
   width: 100%;
 }
@@ -109,11 +121,17 @@ img.search + input {
 }
 
 /* latest */
+
+.latest-container {
+  width: 100%;
+}
+
 .latest .table-container {
   margin-bottom: 50px;
 }
 .latest table {
-  width: 80%;
+  width: 350px;
+  width: 100%;
 }
 
 .latest {
@@ -140,7 +158,6 @@ img.search + input {
 }
 .post-right-img img {
   width: 120px;
-  margin-left: 10px;
 }
 .latest .post-heading {
   font-size: 18px;
@@ -161,3 +178,75 @@ img.search + input {
   width: 12px;
 }
 /* End Post */
+
+/* vertical line */
+.vl {
+  border-left: rgba(0, 0, 0, 0.1) solid 1px;
+  height: 800px;
+}
+
+/* following */
+
+.container-both {
+  width: 100%;
+}
+
+.container-following tr:nth-child(1) {
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.container-following table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+.container-following .following-avatar {
+  margin-top: 20px;
+  width: 70px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.container-following tr:nth-child(4) td {
+  padding-top: 30px;
+  color: #1a8917;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* topics */
+
+.container-topics tr:nth-child(1) td {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.container-topics .topic td span {
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 50px;
+  cursor: pointer;
+}
+.container-topics .topic input[type="button"] {
+  background-color: #fff;
+  padding: 9px 20px;
+  border: #1a8917 1px solid;
+  border-radius: 7%;
+  color: #1a8917;
+  cursor: pointer;
+}
+.container-topics hr {
+  border: none;
+  border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
+  margin: 20px 0;
+}
+.container-topics tr:nth-child(8) td {
+  color: #1a8917;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* end following and topic container */
