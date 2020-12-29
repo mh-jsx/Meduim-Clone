@@ -10,6 +10,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -18,18 +20,17 @@
 
         <!-- Logo -->
         <div class="logo">
-            <img src="content/logo.png" alt="">
+            <a href="index.html"> <img src="content/logo.png" alt=""> </a>
         </div>
-        <!-- search -->
-        <div>
-        </div>
-        <!-- right links + dropdown -->
+
+        <!-- search right links + dropdown -->
         <div class="links">
-
             <tr>
-
-                <td><img class="search" src="content/ico_search.svg" alt=""> <input type="text"
-                        placeholder="Search Medium"></td>
+                <td><img class="search searchhidden" src="content/ico_search.svg" onclick="search()" alt="">
+                </td>
+                <td><img class="search hidden" src="content/ico_search.svg" alt=""> <input type="text"
+                        placeholder="Search Medium">
+                </td>
                 <td><img class="nav-icons" src="content/ico_bookmark2.svg" alt=""></td>
                 <td><img class="nav-icons" src="content/ico_notification.svg" alt=""></td>
                 <td> <input type="button" name="Upgrade" value="Upgrade"> </td>
@@ -37,6 +38,11 @@
             </tr>
 
         </div>
+    </div>
+    <!-- search menu -->
+
+    <div id="searchmenu" class="search-menu">
+        <input type="text" placeholder="Search Medium">
     </div>
 
     <!-- End Navigation -->
@@ -71,6 +77,9 @@
                 </table>
             </div>
         </div>
+
+
+
         <!-- end featured -->
 
         <!-- post 1 -->
@@ -180,7 +189,6 @@
                         </tr>
                         <tr>
                             <td>
-
                                 <img class="following-avatar" src="content/following-img.png" alt="">
                                 <img class="following-avatar" src="content/profile22.jpeg" alt="">
                                 <img class="following-avatar" src="content/following-img1.png" alt="">
@@ -244,7 +252,9 @@
 
                         <!-- tr 3 -->
                         <tr>
-                            <td>See More</td>
+
+                            <td><a href="topics.html"> See More </a></td>
+
                         </tr>
 
                     </table>
@@ -686,7 +696,6 @@
                         <td class="end-post-link"> <span><a href="">Read More</a> . 8 min read </span> <img
                                 src="content/ico_star.svg" alt="">
                         </td>
-                        <!-- <td><br> <br> <br></td> -->
                     </tr>
                     <tr>
                         <td class="see-more">See Your full reading list.</td>
@@ -695,6 +704,23 @@
             </div>
         </div>
     </div>
+
+    <!-- script -->
+
+    <script>
+        function search() {
+            // document.getElementById('searchmenu').style.display = 'block';
+
+            var x = document.getElementById("searchmenu");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+
+        }
+    </script>
+
 </body>
 
 

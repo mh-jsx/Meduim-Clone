@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/topics.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div class="navbar">
+
+        <!-- Logo -->
+        <div class="logo">
+            <a href="index.html"> <img src="content/logo.png" alt=""> </a>
+        </div>
+
+        <!-- search right links + dropdown -->
+        <div class="links">
+            <tr>
+                <td><img class="search searchhidden" src="content/ico_search.svg" onclick="search()" alt="">
+                </td>
+                <td><img class="search hidden" src="content/ico_search.svg" alt=""> <input type="text"
+                        placeholder="Search Medium">
+                </td>
+                <td><img class="nav-icons" src="content/ico_bookmark2.svg" alt=""></td>
+                <td><img class="nav-icons" src="content/ico_notification.svg" alt=""></td>
+                <td> <input type="button" name="Upgrade" value="Upgrade"> </td>
+                <td> <img class="nav-profile" src="content/profile.jpg" alt=""> </td>
+            </tr>
+
+        </div>
+    </div>
+    <!-- search menu -->
+
+    <div id="searchmenu" class="search-menu">
+        <input type="text" placeholder="Search Medium">
+    </div>
+
+    <!-- End Navigation -->
+
+
+    <!-- topics Grid -->
+
+    <div class="container-post">
+
+        <!-- post1 -->
+        <div class="post">
+            <tr>
+                <td>
+                    <h3>Art</h3>
+                </td>
+                <td><img src="content/ico_add.svg" alt=""></td>
+            </tr>
+
+
+            <div class="img"></div>
+        </div>
+
+        <!-- post2 -->
+        <div class="post span-2">
+            <tr>
+                <td>
+                    <h3>Art</h3>
+                </td>
+                <td><img src="content/ico_add.svg" alt=""></td>
+            </tr>
+
+
+            <div class="img"></div>
+        </div>
+        <!-- post3 -->
+        <div class="post">
+            <tr>
+                <td>
+                    <h3>Art</h3>
+                </td>
+                <td><img src="content/ico_add.svg" alt=""></td>
+            </tr>
+
+
+            <div class="img"></div>
+        </div>
+        <!-- post4 -->
+        <div class="post">
+            <tr>
+                <td>
+                    <h3>Art</h3>
+                </td>
+                <td><img src="content/ico_add.svg" alt=""></td>
+            </tr>
+
+            <div class="img"></div>
+        </div>
+
+        <!-- post5 -->
+        <div class="post">
+            <tr>
+                <td>
+                    <h3>Art</h3>
+                </td>
+                <td><img src="content/ico_add.svg" alt=""></td>
+            </tr>
+
+
+            <div class="img"></div>
+        </div>
+
+        <!-- post6 -->
+        <div class="post">
+            <tr>
+                <td>
+                    <h3>Art</h3>
+                </td>
+                <td><img src="content/ico_add.svg" alt=""></td>
+            </tr>
+
+
+            <div class="img"></div>
+        </div>
+        <!-- post7 -->
+        <div class="post">
+            <tr>
+                <td>
+                    <h3>Art</h3>
+                </td>
+                <td><img src="content/ico_add.svg" alt=""></td>
+            </tr>
+
+
+            <div class="img"></div>
+        </div>
+        <!-- post8 -->
+        <div class="post">
+            <tr>
+                <td>
+                    <h3>Art</h3>
+                </td>
+                <td><img src="content/ico_add.svg" alt=""></td>
+            </tr>
+
+            <div class="img"></div>
+        </div>
+    </div>
+
+    <!-- script -->
+
+    <script>
+        function search() {
+            // document.getElementById('searchmenu').style.display = 'block';
+
+            var x = document.getElementById("searchmenu");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>
